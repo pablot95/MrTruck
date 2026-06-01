@@ -349,8 +349,15 @@ section { padding: 2rem 0; }
 .contacto-inner h2 { color: var(--white); margin-bottom: 1.25rem; font-size: clamp(2rem,5vw,3.75rem); }
 .contacto-inner p { color: rgba(255,255,255,.65); max-width: 520px; margin-bottom: 2.5rem; font-size: 1rem; line-height: 1.75; }
 .contacto-actions { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 2.5rem; }
-.contacto-data { display: flex; gap: 2rem; flex-wrap: wrap; }
-.c-data-item { display: flex; align-items: center; gap: .6rem; color: rgba(255,255,255,.4); font-size: .8rem; }
+.contacto-data { display: flex; gap: .75rem; flex-wrap: wrap; }
+.c-data-item {
+  display: flex; align-items: center; gap: .7rem;
+  color: white; font-size: .875rem; font-weight: 500;
+  background: rgba(255,255,255,.28); border: 1px solid rgba(255,255,255,.15);
+  border-radius: 6px; padding: .55rem .9rem;
+  transition: background .2s, border-color .2s, color .2s;
+}
+a.c-data-item:hover { background: rgba(255,255,255,.15); border-color: var(--green); color: var(--white); text-decoration: none; }
 .c-data-item svg { color: var(--green); flex-shrink: 0; }
 
 .site-footer { background: var(--off-black); padding: 3rem 0 1.5rem; }
