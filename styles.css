@@ -29,7 +29,7 @@ input, textarea { font-family: inherit; }
 .container { max-width: 1400px; margin: 0 auto; padding-inline: 2rem; }
 
 h1, h2, h3 { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; line-height: 1.05; letter-spacing: -.01em; }
-h1 { font-size: 4rem; font-weight: 800; }
+h1 { font-size: 3rem; font-weight: 800; }
 h2 { font-size: clamp(2rem, 5vw, 3.5rem); }
 h3 { font-size: clamp(1.25rem, 2.5vw, 1.75rem); font-weight: 600; }
 p { color: var(--gray-600); line-height: 1.75; font-size: .9375rem; }
@@ -161,7 +161,7 @@ em { font-style: italic; color: var(--green); }
   margin-left: 10rem;
 }
 .hero-logo-wrap { margin-bottom: 1rem; }
-.hero-logo { width: 320px; height: auto; display: block; filter: drop-shadow(0 4px 16px rgba(0,0,0,.5)); }
+.hero-logo { width: 420px; height: auto; display: block; filter: drop-shadow(0 4px 16px rgba(0,0,0,.5)); }
 .hero-title {
   color: var(--white); text-transform: uppercase;
   margin-bottom: 1rem;
@@ -296,9 +296,7 @@ section { padding: 2rem 0; }
   position: absolute; inset: 0;
   background: linear-gradient(to top, rgba(0,0,0,.85) 0%, rgba(0,0,0,.1) 60%, transparent 100%);
   padding: 1.5rem; display: flex; flex-direction: column; justify-content: flex-end;
-  opacity: 0; transition: opacity .35s var(--ease);
 }
-.flota-card:hover .flota-cap { opacity: 1; }
 .flota-cap span {
   font-family: 'Barlow Condensed', sans-serif; font-size: 1.2rem; font-weight: 700;
   text-transform: uppercase; color: var(--green); display: block; margin-bottom: .3rem;
@@ -366,7 +364,7 @@ section { padding: 2rem 0; }
 .footer-nav { display: flex; flex-direction: column; gap: .6rem; padding-top: .5rem; }
 .footer-nav a { font-size: .8125rem; color: rgba(255,255,255,.5); transition: color .2s; }
 .footer-nav a:hover { color: var(--green); }
-.footer-contact { padding-top: .5rem; }
+.footer-contact { display: flex; flex-direction: column; gap: .45rem; padding-top: .5rem; }
 .footer-contact a { display: flex; align-items: center; gap: .6rem; color: rgba(255,255,255,.5); font-size: .8125rem; transition: color .2s; }
 .footer-contact a:hover { color: var(--green); }
 .footer-bottom {
