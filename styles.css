@@ -322,6 +322,8 @@ section { padding: 2rem 0; }
   cursor: pointer; aspect-ratio: 4/3;
 }
 .flota-card--span2 { grid-column: span 2; aspect-ratio: 16/9; }
+.flota-card--natural { aspect-ratio: unset; }
+.flota-card--natural img { height: auto; object-fit: contain; }
 .flota-card img { width: 100%; height: 100%; object-fit: cover; transition: transform .7s var(--ease); }
 .flota-card:hover img { transform: scale(1.06); }
 .flota-cap {
@@ -341,12 +343,17 @@ section { padding: 2rem 0; }
 }
 .trabajos-grid--2col {
   grid-template-columns: repeat(2, 1fr);
+  max-width: 860px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .trab-item { display: flex; flex-direction: column; border-radius: 2px; overflow: hidden; border: 1px solid var(--gray-100); transition: box-shadow .3s var(--ease), transform .3s var(--ease); }
 .trab-item:hover { box-shadow: 0 20px 60px rgba(0,0,0,.08); transform: translateY(-4px); }
 .trab-item--wide { grid-column: span 3; flex-direction: row; align-items: stretch; }
 .trab-img { overflow: hidden; flex-shrink: 0; }
 .trab-item:not(.trab-item--wide) .trab-img { height: 220px; }
+.trab-img--portrait { height: auto !important; aspect-ratio: 3/5; }
+.trab-img--landscape { height: auto !important; aspect-ratio: 5/3; }
 .trab-item--wide .trab-img { width: 55%; }
 .trab-img img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s var(--ease); }
 .trab-item:hover .trab-img img { transform: scale(1.05); }
